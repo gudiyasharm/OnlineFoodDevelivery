@@ -1,0 +1,205 @@
+/* css Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height:59px
+}
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0;
+}
+/*For Navigation Bar: Logo and Immage */
+#logo{
+    margin: 10px 35px;
+
+}
+#logo img{
+    height: 89px;
+    margin: 3px 6px;
+}
+/* For Navigation Bar: List styling */
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    /* color: white; */
+    list-style: none;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#navbar ul li a{
+color: blanchedalmond;
+font-weight: bold;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color:black;
+        display: block;
+        background-color: chartreuse;
+}
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height:300px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('../cook.jpg') no-repeat center center/cover;
+    height:430px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.79;
+}
+#home h1{
+    color:white;
+    text-align: center;
+    font-size: 3rem;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+#home p{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* Services Section */
+#services{
+    background: url('../tomatoes.jpg');
+    margin: 30px;
+    display: flex; 
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 5px 46px;
+    margin-bottom: 20px;
+    border-radius: 28px;
+    background-color: rgb(235, 223, 219);
+}
+#services .box img{
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+#services .box p{
+    font-family: monospace;
+}
+/* Client Section */
+#client-section{
+height: 344px;
+}
+#client-section::before{
+content: "";
+position: absolute;
+background: url('../table.jpg');
+width: 100%;
+height: 51%;
+z-index: -1;
+opacity: 0.7;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+padding: 25px;
+
+}
+#clients img{
+    height: 124px;
+}
+/* Contact Section */
+#contact{
+    position:relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('../contact.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7; 
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer{
+    background: rgb(26, 25, 23);
+    color: crimson;
+    padding: 9px 20px;
+}
+/* Utility class */
+.h-primary{
+    padding: 12px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.h-secondary{
+    font-size:1.5rem;
+    padding: 12px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.btn{
+    padding: 6px 20px;
+    border: 3px solid whitesmoke;
+    background-color:rgb(194, 80, 80);
+    color: white;
+    margin: 17px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+    
+}
